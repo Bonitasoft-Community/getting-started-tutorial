@@ -1,0 +1,59 @@
+= Getting started tutorial
+
+== Overview
+This repository provides the solution for the official  http://documentation.bonitasoft.com/getting-started-tutorial-2[getting started tutorial].
+
+== Compatibility
+This example has been built with Bonita BPM 7.2.0 Community Edition.
+
+It is compatible with all Bonita BPM Editions (Community and Subscription).
+It should remain compatible with any maintenance releases.
+
+== Artifacts provided
+You can get all artifact in a single zip file from https://github.com/Bonitasoft-Community/getting-started-turorial/releases[releases] section.
+
+* `Simple Travel Request-1.0.bos` includes:
+** The process diagram with the process definition
+** The Business Data Model (BDM)
+** Instantiation and step forms
+** Application page
+* `page-TravelTool.zip` the application page ready to be deployed
+* `Travel App.xml`: the application description (URL, reference to `TravelTool` page...)
+
+== Importing the solution in Studio
+To import the solution in Bonita BPM Studio:
+
+. Go to `Diagram`  -> `Import...` menu
+. Click on `Browse...` and select `Simple Travel Request-1.0.bos` file
+. Click on `Import` button
+
+WARNING: When you import `Simple Travel Request-1.0.bos` in your Studio, if a BDM is already defined, Studio will ask you if you want to override it (only one BDM is supported per repository).
+
+== Application page deployment
+Follow those steps to deploy the application page:
+
+. Click on `Portal` button in Studio to open Bonita BPM Portal
+. In the upper right corner click on the down arrow next to `User` label and select `Administrator`
+. Click on `Resources` tab
+. Click on `Add` button (top left corner)
+. Click to open the file browser and select `page-TravelTool.zip` file
+. Click on `Next` button
+. Click on `Confirm` button
+
+The application page is now deployed. Next step is to deploy the application description.
+
+== Application deployment
+To deploy the application:
+
+. In Bonita BPM Portal switch to `Administrator` view
+. Click on `Applications` tab
+. Click on `Import` button
+. Click to open the file browser and select `Travel App.xml` file
+. Click on `Import` button
+. Click on `Close` button
+
+Application is now deployed. You can open it by click on the link in `URL` column.
+
+
+== Issues tracker
+Use https://github.com/Bonitasoft-Community/getting-started-turorial/issues[GitHub issue tracker] to report issues.
