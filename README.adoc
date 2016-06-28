@@ -29,6 +29,15 @@ To import the solution in Bonita BPM Studio:
 
 WARNING: When you import `Simple Travel Request-1.0.bos` in your Studio, if a BDM is already defined, Studio will ask you if you want to override it (only one BDM is supported per repository).
 
+== Process definition deployment
+The easiest solution to deploy the `Simple Travel Request` process definition in Bonita BPM Studio embedded test environment is to use the `Run` button:
+. Go to `Diagram`  -> `Open...` menu
+. Select `Simple Travel Request (1.0)` process diagram
+. Click on `Open` button
+. Click on `Run` button in Bonita BPM Studio toolbar
+
+Clicking on the `Run` button will actually packaged and deploy the process to Bonita BPM Studio test environment (test environment is a Tomcat server with Bonita BPM web application). It will also open the process instantiation form in a web browser. You can use this instantiation form to start a new process instance. Another alternative to start a process instance is to use an "application". See in next chapter how to deploy page and application.
+
 == Application page deployment
 Follow those steps to deploy the application page:
 
