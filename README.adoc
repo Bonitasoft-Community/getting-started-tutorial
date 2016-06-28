@@ -31,6 +31,7 @@ WARNING: When you import `Simple Travel Request-1.0.bos` in your Studio, if a BD
 
 == Process definition deployment
 The easiest solution to deploy the `Simple Travel Request` process definition in Bonita BPM Studio embedded test environment is to use the `Run` button:
+
 . Go to `Diagram`  -> `Open...` menu
 . Select `Simple Travel Request (1.0)` process diagram
 . Click on `Open` button
