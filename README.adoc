@@ -1,10 +1,10 @@
 = Getting started tutorial
 
 == Overview
-This repository provides the solution for the official  http://documentation.bonitasoft.com/getting-started-tutorial-2[getting started tutorial].
+This repository provides the solution for the official  http://documentation.bonitasoft.com/7.5?page=getting-started-tutorial[getting started tutorial].
 
 == Compatibility
-This example has been built with Bonita BPM 7.2.0 Community Edition.
+This example has been built with Bonita BPM 7.5.0 Community Edition.
 
 It is compatible with all Bonita BPM Editions (Community and Subscription).
 It should remain compatible with any maintenance releases.
@@ -23,7 +23,7 @@ You can get all artifact in a single zip file from https://github.com/Bonitasoft
 == Importing the solution in Studio
 To import the solution in Bonita BPM Studio:
 
-. Go to `Diagram`  -> `Import...` menu
+. Go to `Diagram`  -> `Import` -> `BOS archive...` menu
 . Click on `Browse...` and select `Simple Travel Request-1.0.bos` file
 . Click on `Import` button
 
