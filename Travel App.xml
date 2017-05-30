@@ -7,5 +7,6 @@
         <applicationPages>
             <applicationPage customPage="custompage_TravelTool" token="requests"/>
         </applicationPages>
+        <applicationMenus/>
     </application>
 </applications>
