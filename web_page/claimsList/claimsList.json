@@ -1,55 +1,88 @@
 {
-  "designerVersion" : "1.9.53",
+  "designerVersion" : "1.10.18",
+  "previousDesignerVersion" : "1.9.53",
   "id" : "claimsList",
   "name" : "claimsList",
-  "lastUpdate" : 1567508141182,
-  "rows" : [ [ {
-    "type" : "component",
-    "dimension" : {
-      "xs" : 12
-    },
-    "propertyValues" : {
-      "cssClasses" : {
-        "type" : "constant",
-        "value" : ""
-      },
-      "hidden" : {
-        "type" : "constant",
-        "value" : false
-      },
-      "headers" : {
-        "type" : "constant",
-        "value" : [ "Description", "Answer", "Satisfaction level" ]
-      },
-      "content" : {
-        "type" : "expression",
-        "value" : "claims"
-      },
-      "columnsKey" : {
-        "type" : "constant",
-        "value" : [ "description", "answer", "satisfactionLevel" ]
-      },
-      "selectedRow" : {
-        "type" : "variable",
-        "value" : ""
+  "lastUpdate" : 1579619777838,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "headers" : {
+            "type" : "constant",
+            "value" : [
+              "Description",
+              "Answer",
+              "Satisfaction level"
+            ]
+          },
+          "content" : {
+            "type" : "expression",
+            "value" : "claims"
+          },
+          "columnsKey" : {
+            "type" : "constant",
+            "value" : [
+              "description",
+              "answer",
+              "satisfactionLevel"
+            ]
+          },
+          "selectedRow" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "striped" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "condensed" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "bordered" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "d94b6847-3761-4304-b47b-527580df8746",
+        "hasValidationError" : false,
+        "id" : "pbTable"
       }
-    },
-    "reference" : "d94b6847-3761-4304-b47b-527580df8746",
-    "hasValidationError" : false,
-    "id" : "pbTable"
-  } ] ],
-  "assets" : [ {
-    "id" : "5ece34dc-9fc3-4bf3-993d-6ad275d4833e",
-    "name" : "style.css",
-    "type" : "css",
-    "order" : 0,
-    "external" : false
-  } ],
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "5ece34dc-9fc3-4bf3-993d-6ad275d4833e",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
   "inactiveAssets" : [ ],
-  "data" : {
+  "variables" : {
     "claims" : {
       "type" : "url",
-      "value" : "../API/bdm/businessData/com.company.model.Claim?q=find&p=0&c=100",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Claim?q=find&p=0&c=100"
+      ],
       "exposed" : false
     }
   },

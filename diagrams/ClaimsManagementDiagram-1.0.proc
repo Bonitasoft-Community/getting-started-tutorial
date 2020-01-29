@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_SDXUAMpcEemOuOG-sKhY3A" name="ClaimsManagementDiagram" author="antoine" bonitaVersion="7.9.4" bonitaModelVersion="7.9.0-002" configId="ACED000574000E372E392E302D303032372E392E34">
+  <process:MainProcess xmi:id="_SDXUAMpcEemOuOG-sKhY3A" name="ClaimsManagementDiagram" author="antoine" bonitaVersion="7.10.0" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E30">
     <elements xmi:type="process:Pool" xmi:id="_SDXUAcpcEemOuOG-sKhY3A" name="ClaimsManagement">
       <elements xmi:type="process:Lane" xmi:id="_YWkU8M4hEemKFalrpE0Ksg" name="Customer lane" actor="_iYMgAM4jEemKFalrpE0Ksg">
         <elements xmi:type="process:StartEvent" xmi:id="_SDXUA8pcEemOuOG-sKhY3A" name="Submit claim" outgoing="_SDXUPspcEemOuOG-sKhY3A">
@@ -98,8 +98,8 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_SDXUKspcEemOuOG-sKhY3A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_SDXUK8pcEemOuOG-sKhY3A" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_SDXULMpcEemOuOG-sKhY3A" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_9AVB8M4zEemKFalrpE0Ksg" name="Send notification" definitionId="email" event="ON_ENTER" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_9AVB8c4zEemKFalrpE0Ksg" definitionId="email" version="1.0.0" modelVersion="7.9.0-002">
+          <connectors xmi:type="process:Connector" xmi:id="_9AVB8M4zEemKFalrpE0Ksg" name="Send notification" definitionId="email" event="ON_ENTER" definitionVersion="1.1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_9AVB8c4zEemKFalrpE0Ksg" definitionId="email" version="1.1.0" modelVersion="7.9.0-002">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_9AVB8s4zEemKFalrpE0Ksg" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_9AVB884zEemKFalrpE0Ksg" name="localhost" content="localhost" returnTypeFixed="true"/>
               </parameters>
@@ -153,6 +153,9 @@
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_9AVCFM4zEemKFalrpE0Ksg" key="attachments">
                 <expression xmi:type="expression:ListExpression" xmi:id="_9AVCFc4zEemKFalrpE0Ksg"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_BAfdmzxhEeqpi_0hPidDHw" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_BAfdnDxhEeqpi_0hPidDHw" name="no-reply@acme.com" content="no-reply@acme.com" returnTypeFixed="true"/>
               </parameters>
             </configuration>
           </connectors>
@@ -274,23 +277,23 @@
   </process:MainProcess>
   <notation:Diagram xmi:id="_SDXUaspcEemOuOG-sKhY3A" type="Process" element="_SDXUAMpcEemOuOG-sKhY3A" name="MyDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Node" xmi:id="_SDXUa8pcEemOuOG-sKhY3A" type="2007" element="_SDXUAcpcEemOuOG-sKhY3A">
-      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUbMpcEemOuOG-sKhY3A" type="5008"/>
-      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUbcpcEemOuOG-sKhY3A" type="7001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUbMpcEemOuOG-sKhY3A" type="5008" element="_SDXUAcpcEemOuOG-sKhY3A"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUbcpcEemOuOG-sKhY3A" type="7001" element="_SDXUAcpcEemOuOG-sKhY3A">
         <children xmi:type="notation:Node" xmi:id="_SDXUbspcEemOuOG-sKhY3A" type="3007" element="_SDXUAspcEemOuOG-sKhY3A">
-          <children xmi:type="notation:DecorationNode" xmi:id="_SDXUb8pcEemOuOG-sKhY3A" type="5007"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_SDXUcMpcEemOuOG-sKhY3A" type="7002">
+          <children xmi:type="notation:DecorationNode" xmi:id="_SDXUb8pcEemOuOG-sKhY3A" type="5007" element="_SDXUAspcEemOuOG-sKhY3A"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_SDXUcMpcEemOuOG-sKhY3A" type="7002" element="_SDXUAspcEemOuOG-sKhY3A">
             <children xmi:type="notation:Shape" xmi:id="_SDXUccpcEemOuOG-sKhY3A" type="3005" element="_SDXUB8pcEemOuOG-sKhY3A" fontName="Noto Sans" fillColor="14334392" lineColor="10710316">
-              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUcspcEemOuOG-sKhY3A" type="5005"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUcspcEemOuOG-sKhY3A" type="5005" element="_SDXUB8pcEemOuOG-sKhY3A"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SDXUc8pcEemOuOG-sKhY3A" x="113" y="53" width="120" height="60"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_SDXUe8pcEemOuOG-sKhY3A" type="3008" element="_SDXUIcpcEemOuOG-sKhY3A" fontName="Noto Sans">
-              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUfMpcEemOuOG-sKhY3A" type="5026">
+              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUfMpcEemOuOG-sKhY3A" type="5026" element="_SDXUIcpcEemOuOG-sKhY3A">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_SDXUfcpcEemOuOG-sKhY3A" x="1" y="-70"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SDXUfspcEemOuOG-sKhY3A" x="419" y="61" width="43" height="43"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_SDXUf8pcEemOuOG-sKhY3A" type="3003" element="_SDXUJcpcEemOuOG-sKhY3A" fontName="Noto Sans">
-              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUgMpcEemOuOG-sKhY3A" type="5025">
+              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUgMpcEemOuOG-sKhY3A" type="5025" element="_SDXUJcpcEemOuOG-sKhY3A">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_SDXUgcpcEemOuOG-sKhY3A" y="5"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SDXUgspcEemOuOG-sKhY3A" x="561" y="68"/>
@@ -303,16 +306,16 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SDXUjspcEemOuOG-sKhY3A" x="50" y="126" width="674" height="153"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_YWk8AM4hEemKFalrpE0Ksg" type="3007" element="_YWkU8M4hEemKFalrpE0Ksg">
-          <children xmi:type="notation:DecorationNode" xmi:id="_YWljEM4hEemKFalrpE0Ksg" type="5007"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_YWljEc4hEemKFalrpE0Ksg" type="7002">
+          <children xmi:type="notation:DecorationNode" xmi:id="_YWljEM4hEemKFalrpE0Ksg" type="5007" element="_YWkU8M4hEemKFalrpE0Ksg"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_YWljEc4hEemKFalrpE0Ksg" type="7002" element="_YWkU8M4hEemKFalrpE0Ksg">
             <children xmi:type="notation:Shape" xmi:id="_SDXUdMpcEemOuOG-sKhY3A" type="3002" element="_SDXUA8pcEemOuOG-sKhY3A" fontName="Noto Sans">
-              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUdcpcEemOuOG-sKhY3A" type="5024">
+              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUdcpcEemOuOG-sKhY3A" type="5024" element="_SDXUA8pcEemOuOG-sKhY3A">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_SDXUdspcEemOuOG-sKhY3A" y="5"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SDXUd8pcEemOuOG-sKhY3A" x="57" y="48"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_SDXUeMpcEemOuOG-sKhY3A" type="3005" element="_SDXUFMpcEemOuOG-sKhY3A" fontName="Noto Sans" fillColor="14334392" lineColor="10710316">
-              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUecpcEemOuOG-sKhY3A" type="5005"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUecpcEemOuOG-sKhY3A" type="5005" element="_SDXUFMpcEemOuOG-sKhY3A"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SDXUespcEemOuOG-sKhY3A" x="253" y="30" width="132" height="66"/>
             </children>
           </children>
@@ -323,16 +326,16 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YWk8BM4hEemKFalrpE0Ksg" x="50" y="10" width="674" height="156"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_YqvOIM4hEemKFalrpE0Ksg" type="3007" element="_YqrjwM4hEemKFalrpE0Ksg">
-          <children xmi:type="notation:DecorationNode" xmi:id="_Yqv1MM4hEemKFalrpE0Ksg" type="5007"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_Yqv1Mc4hEemKFalrpE0Ksg" type="7002">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Yqv1MM4hEemKFalrpE0Ksg" type="5007" element="_YqrjwM4hEemKFalrpE0Ksg"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_Yqv1Mc4hEemKFalrpE0Ksg" type="7002" element="_YqrjwM4hEemKFalrpE0Ksg">
             <children xmi:type="notation:Shape" xmi:id="_SDXUhspcEemOuOG-sKhY3A" type="3003" element="_SDXUNspcEemOuOG-sKhY3A" fontName="Noto Sans">
-              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUh8pcEemOuOG-sKhY3A" type="5025">
+              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUh8pcEemOuOG-sKhY3A" type="5025" element="_SDXUNspcEemOuOG-sKhY3A">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_SDXUiMpcEemOuOG-sKhY3A" y="5"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SDXUicpcEemOuOG-sKhY3A" x="561" y="59"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_SDXUg8pcEemOuOG-sKhY3A" type="3005" element="_SDXUKcpcEemOuOG-sKhY3A" fontName="Noto Sans" fillColor="14334392" lineColor="10710316">
-              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUhMpcEemOuOG-sKhY3A" type="5005"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="_SDXUhMpcEemOuOG-sKhY3A" type="5005" element="_SDXUKcpcEemOuOG-sKhY3A"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SDXUhcpcEemOuOG-sKhY3A" x="376" y="41" width="130" height="65"/>
             </children>
           </children>
@@ -351,42 +354,42 @@
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_SDXUlMpcEemOuOG-sKhY3A"/>
     <edges xmi:type="notation:Connector" xmi:id="_SDXUlcpcEemOuOG-sKhY3A" type="4001" element="_SDXUPspcEemOuOG-sKhY3A" source="_SDXUdMpcEemOuOG-sKhY3A" target="_SDXUccpcEemOuOG-sKhY3A" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUlspcEemOuOG-sKhY3A" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUlspcEemOuOG-sKhY3A" type="6001" element="_SDXUPspcEemOuOG-sKhY3A">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_SDXUl8pcEemOuOG-sKhY3A" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_SDXUmMpcEemOuOG-sKhY3A" fontName="Noto Sans"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SDXUmcpcEemOuOG-sKhY3A" points="[14, -3, -87, -149]$[97, -3, -4, -149]$[97, 116, -4, -30]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_SDXUmspcEemOuOG-sKhY3A" type="4001" element="_SDXUQcpcEemOuOG-sKhY3A" source="_SDXUccpcEemOuOG-sKhY3A" target="_SDXUeMpcEemOuOG-sKhY3A" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUm8pcEemOuOG-sKhY3A" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUm8pcEemOuOG-sKhY3A" type="6001" element="_SDXUQcpcEemOuOG-sKhY3A">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_SDXUnMpcEemOuOG-sKhY3A" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_SDXUncpcEemOuOG-sKhY3A" fontName="Noto Sans"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SDXUnspcEemOuOG-sKhY3A" points="[24, -30, -122, 146]$[24, -176, -122, 0]$[80, -176, -66, 0]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_SDXUn8pcEemOuOG-sKhY3A" type="4001" element="_SDXURMpcEemOuOG-sKhY3A" source="_SDXUeMpcEemOuOG-sKhY3A" target="_SDXUe8pcEemOuOG-sKhY3A" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUoMpcEemOuOG-sKhY3A" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUoMpcEemOuOG-sKhY3A" type="6001" element="_SDXURMpcEemOuOG-sKhY3A">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_SDXUocpcEemOuOG-sKhY3A" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_SDXUospcEemOuOG-sKhY3A" fontName="Noto Sans"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SDXUo8pcEemOuOG-sKhY3A" points="[66, 0, -55, -175]$[130, 0, 9, -175]$[130, 162, 9, -13]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SDXUo8pcEemOuOG-sKhY3A" points="[66, 0, -55, -175]$[120, 0, -1, -175]$[120, 155, -1, -20]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_SDXUpMpcEemOuOG-sKhY3A" type="4001" element="_SDXUR8pcEemOuOG-sKhY3A" source="_SDXUe8pcEemOuOG-sKhY3A" target="_SDXUf8pcEemOuOG-sKhY3A" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUpcpcEemOuOG-sKhY3A" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUpcpcEemOuOG-sKhY3A" type="6001" element="_SDXUR8pcEemOuOG-sKhY3A">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_SDXUpspcEemOuOG-sKhY3A" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_SDXUp8pcEemOuOG-sKhY3A" fontName="Noto Sans"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SDXUqMpcEemOuOG-sKhY3A" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_SDXUqcpcEemOuOG-sKhY3A" type="4001" element="_SDXUSspcEemOuOG-sKhY3A" source="_SDXUe8pcEemOuOG-sKhY3A" target="_SDXUg8pcEemOuOG-sKhY3A" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUqspcEemOuOG-sKhY3A" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUqspcEemOuOG-sKhY3A" type="6001" element="_SDXUSspcEemOuOG-sKhY3A">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_SDXUq8pcEemOuOG-sKhY3A" x="-5" y="-20"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_SDXUrMpcEemOuOG-sKhY3A" fontName="Noto Sans"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SDXUrcpcEemOuOG-sKhY3A" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_SDXUrspcEemOuOG-sKhY3A" type="4001" element="_SDXUTcpcEemOuOG-sKhY3A" source="_SDXUg8pcEemOuOG-sKhY3A" target="_SDXUhspcEemOuOG-sKhY3A" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUr8pcEemOuOG-sKhY3A" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_SDXUr8pcEemOuOG-sKhY3A" type="6001" element="_SDXUTcpcEemOuOG-sKhY3A">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_SDXUsMpcEemOuOG-sKhY3A" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_SDXUscpcEemOuOG-sKhY3A" fontName="Noto Sans"/>
