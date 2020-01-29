@@ -1,9 +1,8 @@
 {
-  "designerVersion" : "1.10.18",
-  "previousDesignerVersion" : "1.9.53",
+  "designerVersion" : "1.10.34",
   "id" : "claimsList",
   "name" : "claimsList",
-  "lastUpdate" : 1579619777838,
+  "lastUpdate" : 1580288612483,
   "rows" : [
     [
       {
@@ -19,6 +18,10 @@
           "hidden" : {
             "type" : "constant",
             "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
           },
           "headers" : {
             "type" : "constant",
@@ -44,10 +47,6 @@
             "type" : "variable",
             "value" : ""
           },
-          "allowHTML" : {
-            "type" : "constant",
-            "value" : false
-          },
           "striped" : {
             "type" : "constant",
             "value" : true
@@ -61,7 +60,7 @@
             "value" : false
           }
         },
-        "reference" : "d94b6847-3761-4304-b47b-527580df8746",
+        "reference" : "e78acf29-70b1-4ac7-b0c9-d588c9b5d1d7",
         "hasValidationError" : false,
         "id" : "pbTable"
       }
@@ -69,7 +68,7 @@
   ],
   "assets" : [
     {
-      "id" : "5ece34dc-9fc3-4bf3-993d-6ad275d4833e",
+      "id" : "13f632ce-a7fd-4083-93b7-cb54d7e8b742",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -79,15 +78,15 @@
   "inactiveAssets" : [ ],
   "variables" : {
     "claims" : {
-      "type" : "url",
+      "type" : "businessdata",
       "value" : [
-        "../API/bdm/businessData/com.company.model.Claim?q=find&p=0&c=100"
+        "{\"displayValue\":\"find [com.company.model.Claim]\",\"businessObjectName\":\"Claim\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com_company_model_Claim\",\"qualifiedName\":\"com.company.model.Claim\",\"filters\":[],\"pagination\":{\"p\":0,\"c\":10}}"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "217dce2f-5416-4a3c-ac1e-a4c7efb198bf",
+  "uuid" : "b082234a-afb7-430d-8ee6-8727596b456b",
   "type" : "page",
   "description" : "Page generated with Bonita UI designer"
 }

@@ -1,9 +1,8 @@
 {
-  "designerVersion" : "1.10.18",
-  "previousDesignerVersion" : "1.9.57",
-  "id" : "answerForm",
-  "name" : "answerForm",
-  "lastUpdate" : 1579619777878,
+  "designerVersion" : "1.10.34",
+  "id" : "reviewAndAnswerForm",
+  "name" : "reviewAndAnswerForm",
+  "lastUpdate" : 1580231451337,
   "rows" : [
     [
       {
@@ -12,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "c996992a-4950-4b2f-863a-bda4d412e3f6",
+        "reference" : "27728b7d-ba52-43d5-9cf5-60dcfbb807c6",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -67,7 +66,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "55657b42-3617-4c4e-b644-9d5be1e80162",
+              "reference" : "4540d832-7c7f-40a7-a41c-bcc1968a3978",
               "hasValidationError" : false,
               "id" : "pbTitle"
             }
@@ -119,7 +118,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "894fe1b8-7fe2-4a9e-a26d-a25d308e5fb0",
+              "reference" : "fa8745b6-302c-498d-a5e1-5a4235a113db",
               "hasValidationError" : false,
               "id" : "pbText"
             }
@@ -134,7 +133,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "b1e672bf-24a1-44f9-9332-64e0d43ffcc7",
+        "reference" : "18180bc7-90a1-454f-8657-05cb2412a533",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -143,7 +142,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "d66398ad-3022-4bfb-8b23-ffd2c3909c7b",
+          "reference" : "c2dedd3b-8b58-4e83-a123-f2865b7cb7fc",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -198,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "fb12204a-3c29-4821-bc94-0feeac718d48",
+                "reference" : "a0c981d8-c8c0-4acc-a753-9cfd3db74d98",
                 "hasValidationError" : false,
                 "id" : "pbTitle"
               }
@@ -211,8 +210,7 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
+                    "type" : "variable"
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -249,7 +247,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e878ee1d-0cd5-40f6-b6a8-620c102f13d2",
+                "reference" : "8301f10c-14df-4617-bf52-d98891af457e",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -301,7 +299,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "fec19e3f-1813-4c94-9343-3ef3c8b4b880",
+                      "reference" : "6685c431-f532-420c-becd-e4328d6ed1e6",
                       "hasValidationError" : false,
                       "id" : "pbText"
                     }
@@ -313,31 +311,23 @@
                         "xs" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "widgetId" : {
+                          "type" : "constant",
+                          "value" : "pbInput"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
                         "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -345,22 +335,45 @@
                           "type" : "interpolation",
                           "value" : "Answer"
                         },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
-                        "labelWidth" : {
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : "left"
+                        },
+                        "class" : {
+                          "type" : "constant",
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "claim.answer"
                         }
                       },
-                      "reference" : "876b0577-c04f-4b75-8c78-296e853450c2",
+                      "reference" : "d5f74d94-a789-40e0-b675-9311f2064d75",
                       "hasValidationError" : false,
-                      "id" : "pbTextarea"
+                      "id" : "pbInput"
                     }
                   ]
                 ]
@@ -446,7 +459,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a9b28adb-48a5-49a6-a4d4-63861c3d3565",
+                "reference" : "545ffb19-6122-4589-987b-eab744094e81",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -502,7 +515,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "726e1eba-6b96-401a-bcb7-d3814ae83013",
+                "reference" : "43a6a5be-91c0-4374-810d-f24866c466ac",
                 "hasValidationError" : false,
                 "id" : "pbText"
               }
@@ -514,7 +527,7 @@
   ],
   "assets" : [
     {
-      "id" : "aeb3ddd7-1c86-4a00-8df3-2cd69c6018b8",
+      "id" : "09c8cc6b-6573-4935-8d55-b6fb0d6d6f5e",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -582,7 +595,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "2ec9255b-1a3b-46fd-82a3-03bd7ab8d712",
+  "uuid" : "55a2de9a-8956-4cbd-b45a-b091cc6c38b5",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

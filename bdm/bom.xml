@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<businessObjectModel modelVersion="1.0" productVersion="7.9.2">
+<businessObjectModel modelVersion="1.0" productVersion="7.10.0">
     <businessObjects>
         <businessObject qualifiedName="com.company.model.Claim">
             <fields>
