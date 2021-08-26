@@ -1,0 +1,54 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'The version of the release. Used as tag name.'
+        required: true
+        default: 'x.y.z'
+
+jobs:
+  build:
+    name: Release pipeline
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Setup Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+          server-id: github
+          
+      - name: Configure Git user
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+      - name: Build getting started release 
+        run: ./mvnw --batch-mode release:prepare -DreleaseVersion=${{ github.event.inputs.version }}
+    
+      - name: Create Github Release
+        id: create_release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.event.inputs.version }}
+          release_name: Release ${{ github.event.inputs.version }}
+          body: |
+            ${{ steps.Changelog.outputs.changelog }}
+          draft: false
+          prerelease: false
+     
+      - name: Upload getting started Asset
+        id: upload-getting-started-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          asset_path: target/getting-target-tutorial-${{ github.event.inputs.version }}.bos
+          asset_name: getting-target-tutorial-${{ github.event.inputs.version }}.bos
+          asset_content_type: application/zip
