@@ -68,3 +68,9 @@
 
 # IntelliJ Gradle integration configuration.
 **/.idea/**/gradle.xml
+
+# Maven
+target/
+
+# Macos
+.DS_Store
