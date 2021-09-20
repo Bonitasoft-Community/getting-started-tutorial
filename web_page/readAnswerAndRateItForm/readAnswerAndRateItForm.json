@@ -1,8 +1,9 @@
 {
-  "designerVersion" : "1.10.34",
+  "modelVersion" : "2.2",
+  "previousArtifactVersion" : "1.10.34",
   "id" : "readAnswerAndRateItForm",
   "name" : "readAnswerAndRateItForm",
-  "lastUpdate" : 1580231476180,
+  "lastUpdate" : 1632128361117,
   "rows" : [
     [
       {
