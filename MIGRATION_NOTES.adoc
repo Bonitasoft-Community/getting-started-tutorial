@@ -1,3 +1,9 @@
+== Migration notes (September 1, 2021 at 10:41:46 AM CEST)
+
+=== Updates
+
+* `bonita.runtime.version` has been updated from `7.13.0-SNAPSHOT` to `7.13.0.beta-02`.
+
 == Migration notes (September 1, 2021 at 10:09:11 AM CEST)
 
 === Additions
