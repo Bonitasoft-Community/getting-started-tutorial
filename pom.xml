@@ -13,7 +13,7 @@
     <url>https://github.com/Bonitasoft-Community/getting-started-tutorial</url>
   </scm>
   <properties>
-    <bonita.runtime.version>7.13.0.beta-02</bonita.runtime.version>
+    <bonita.runtime.version>7.13.0</bonita.runtime.version>
     <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
     <maven.compiler.target>11</maven.compiler.target>
     <bonita-project-maven-plugin.version>0.0.3</bonita-project-maven-plugin.version>

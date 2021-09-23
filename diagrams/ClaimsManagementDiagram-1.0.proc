@@ -131,7 +131,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="_cL3VfUH6EeqBR-LRxa6TMQ" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_cL3VfkH6EeqBR-LRxa6TMQ" key="message">
-                <expression xmi:type="expression:Expression" xmi:id="_cL3Vf0H6EeqBR-LRxa6TMQ" name="&lt;pattern-expression>" type="TYPE_PATTERN" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_cL3Vf0H6EeqBR-LRxa6TMQ" name="&lt;pattern-expression>" content="" type="TYPE_PATTERN" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_cL3VgEH6EeqBR-LRxa6TMQ" key="headers">
                 <expression xmi:type="expression:TableExpression" xmi:id="_cL3VgUH6EeqBR-LRxa6TMQ"/>
