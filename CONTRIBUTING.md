@@ -15,18 +15,18 @@ Bonita is a powerful BPM-based application platform for building highly engaging
 
 ## Pull requests
 
-Each minor version of Bonita has its own Git branch to manage its related documentation. (Minor version means X.Y, for example 7.4 or 7.5).
-For instance, the **7.4** branch is where you have to open pull requests when your contribution applies to all 7.4 versions of Bonita.
+Each minor version of Bonita has its own Git branch to manage its related documentation. (Minor version means X.Y, for example 7.11 or 2021.2).
+For instance, the **2021.2** branch is where you have to open pull requests when your contribution applies to all 2021.2 versions of Bonita.
 
 A branch should be name in kebab case prefixed by the type of the feature the branch has been created for (feat, fix, style, tr, chore, howto,...).  
 For instance, for a branch fixing a typo in the User REST API, its name should be `fix/user-delete-rest-api-typo`.
 
 If your contribution applies to multiple minor versions of Bonita, then open a pull request on the lowest applicable version branch. Then add all applicable minor versions in your pull request comment and we will do the rest :-)
 
-<u>Example</u>: Your contribution applies to versions 7.4 and 7.5. Therefore submit your pull request on branch 7.4 with a comment like:
+<u>Example</u>: Your contribution applies to versions 7.11 and 2021.1. Therefore submit your pull request on branch 7.11 with a comment like:
 ```
 My awesome contribution to Bonita documentation.
-Versions: 7.4, 7.5
+Versions: 7.11, 2021.1
 ```
 
 Ideally, a pull request, at first, should contain a single commit containing the changes you want to suggest. Other commits may be added after reviews.
@@ -93,18 +93,18 @@ Please provide links to any relevant tickets, articles or other resources if ava
 
 ## How to update an existing page?
 
-In this case, edit the appropriate _.md_ file and the build process will do the rest.
+In this case, edit the appropriate _.adoc_ file and the build process will do the rest.
 
-<u>Example</u>: To edit the **?page=actors** page in version 7.4, edit the `md/actors.md` file and submit a pull request on **7.4** branch.
+<u>Example</u>: To edit the **?page=actors** page in version 2021.2, edit the `pages/actors.adoc` file and submit a pull request on **2021.2** branch.
 
 
 ## How to add a new page?
 
 ### Create a new page
 
-Checkout a branch from the version you want this page to be available in and create the _.md_ file in the **md** folder.
+Checkout a branch from the version you want this page to be available in and create the _.adoc_ file in the **pages** folder.
 
-<u>Example</u>: To add a new _Manage form control/validation_ tutorial in 7.4, checkout a new branch from the **7.4** branch and create a new _manage-control-in-forms.md_ file in the **md** folder.
+<u>Example</u>: To add a new _Manage form control/validation_ tutorial in 2021.2, checkout a new branch from the **2021.2** branch and create a new _manage-control-in-forms.adoc_ file in the **pages** folder.
 
 You can check its content once committed on the GitHub site ([Simple view](README.md#simple-view)) or using the web server ([Advanced view](README.md#advanced-view)).
 
@@ -113,24 +113,24 @@ You can check its content once committed on the GitHub site ([Simple view](READM
 Your new page is not yet referenced in documentation site's taxonomy. So you will not be able to find your new page in the navigation tree unless you know the URL.
 Therefore you need to add your new page to the taxonomy to be able to find it the navigation tree.
 
-The taxonomy is created from the `taxonomy.md` file.
-In our case, we also want to add a _Howto_ section in the taxonomy tree. So we first create a new item inside the `taxonomy.md`. Then we create a entry point for our new tutorial inside the _Howto_ section:
+The taxonomy is created from the `taxonomy.adoc` file.
+In our case, we also want to add a _Howto_ section in the taxonomy tree. So we first create a new item inside the `taxonomy.adoc`. Then we create a entry point for our new tutorial inside the _Howto_ section:
 
-    * [Howtos](_howtos.md)
-      * [Manage form control/validation](manage-control-in-forms.md)
+    * [Howtos](_how-tos-index.adoc)
+      * [Manage form control/validation](manage-control-in-forms.adoc)
 
-<u>Note</u>: We need to reference a *_howtos.md* page with the list of items of this section. However **you don't need to create the *_howtos.md* file** as it is automatically generated at build time.
+<u>Note</u>: We need to reference a *_how-tosindex.adoc* page with the list of items of this section. However **you don't need to create the *_how-tos-index.adoc* file** as it is automatically generated at build time.
 
-Now starting from the visualization of the _taxonomy.md_ page, we can browse to the _manage-control-in-forms.md_ page.
+Now starting from the visualization of the _taxonomy.adoc_ page, we can browse to the _manage-control-in-forms.adoc_ page.
 
 ### Variables
 
-During markdown to HTML conversion, some predefined variables located in the [variables.json file](scripts/variables.json) are replaced.
+During Asciidoc to HTML conversion, some predefined variables located in the [variables.json file](scripts/variables.json) are replaced.
 
 For instance, the `varVersion` variable matches the current documentation version.
 To reference this variable, use the `${varVersion}` notation in _.md_ files.
 
-#### Markdown titles
+#### AsciiDoc titles
 
 In markdown, lines starting with `#` are converted to `<hx>` tags where _x_ is the number of `#` : 
 * use `#` for `h1` tag
@@ -160,7 +160,7 @@ Current conversion to html is done with `markdown-it` with the [Github-flavored 
 
 ## How to add images?
 
-All images must be added to the **md/images** folder.
+All images must be added to the **ROOT/images** folder.
 
 
 ### Images
