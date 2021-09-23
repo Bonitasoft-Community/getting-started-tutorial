@@ -1,8 +1,9 @@
 {
-  "designerVersion" : "1.10.34",
+  "modelVersion" : "2.2",
+  "previousArtifactVersion" : "1.10.34",
   "id" : "claimsList",
   "name" : "claimsList",
-  "lastUpdate" : 1580288612483,
+  "lastUpdate" : 1632128364031,
   "rows" : [
     [
       {
@@ -80,7 +81,7 @@
     "claims" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"find [com.company.model.Claim]\",\"businessObjectName\":\"Claim\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com_company_model_Claim\",\"qualifiedName\":\"com.company.model.Claim\",\"filters\":[],\"pagination\":{\"p\":0,\"c\":10}}"
+        "{\"displayValue\":\"find [com.company.model.Claim]\",\"businessObjectName\":\"Claim\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.Claim\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
       ],
       "exposed" : false
     }

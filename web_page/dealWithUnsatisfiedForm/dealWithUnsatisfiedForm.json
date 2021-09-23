@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.10.18",
-  "previousDesignerVersion" : "1.9.57",
+  "modelVersion" : "2.2",
+  "previousArtifactVersion" : "1.10.18",
   "id" : "dealWithUnsatisfiedForm",
   "name" : "dealWithUnsatisfiedForm",
-  "lastUpdate" : 1579619777929,
+  "lastUpdate" : 1632375660948,
   "rows" : [
     [
       {

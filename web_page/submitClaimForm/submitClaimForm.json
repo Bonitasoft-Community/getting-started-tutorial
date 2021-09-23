@@ -1,8 +1,9 @@
 {
-  "designerVersion" : "1.10.34",
+  "modelVersion" : "2.2",
+  "previousArtifactVersion" : "1.10.34",
   "id" : "submitClaimForm",
   "name" : "submitClaimForm",
-  "lastUpdate" : 1580219996446,
+  "lastUpdate" : 1632128361876,
   "rows" : [
     [
       {
