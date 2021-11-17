@@ -1,7 +1,7 @@
 # Getting started: workspace and .bos file
 
 ## Overview
-This repository provides the solution for [Bonita getting started](https://documentation.bonitasoft.com/bonita/latest/getting-started-index).
+This repository provides the solution for [Bonita getting started](https://documentation.bonitasoft.com/bonita/latest/getting-started/getting-started-index).
 
 ## Compatibility
 This example has been built with Bonita 2021.2 Community Edition.
@@ -29,11 +29,11 @@ WARNING: When you import _claims-management.bos_ in your Studio, if some artifac
 {: .note}
 
 ## Deployment
-Click on **File > Deploy** Bonita Studio menu to deploy all artifacts and open the Claims management application or the Bonita user home page. For more details refer to [Bonita getting started](https://documentation.bonitasoft.com/bonita/latest/getting-started-index).
+Click on **File > Deploy** Bonita Studio menu to deploy all artifacts and open the Claims management application or the Bonita user home page. For more details refer to [Bonita getting started](https://documentation.bonitasoft.com/bonita/latest/getting-started/getting-started-index).
 
 ## Issues tracker
 Use [GitHub issue tracker](https://github.com/Bonitasoft-Community/getting-started-turorial/issues) to report issues.
 
 ## Content of the Git repository
-If you follow the [Bonita getting started](https://documentation.bonitasoft.com/bonita/latest/getting-started-index) you should end up with a workspace just like the content of this Git repository.
+If you follow the [Bonita getting started](https://documentation.bonitasoft.com/bonita/latest/getting-started/getting-started-index) you should end up with a workspace just like the content of this Git repository.
 
