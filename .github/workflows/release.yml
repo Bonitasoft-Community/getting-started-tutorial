@@ -7,6 +7,10 @@ on:
         description: 'The version of the release. Used as tag name.'
         required: true
         default: 'x.y.z'
+      nextVersion:
+        description: 'The next development version in master.'
+        required: false
+        default: 'x.y.z-SNAPSHOT'
 
 jobs:
   build:
@@ -27,7 +31,7 @@ jobs:
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
       - name: Build getting started release 
-        run: mvn --batch-mode release:prepare -DreleaseVersion=${{ github.event.inputs.version }}
+        run: mvn --batch-mode release:prepare -DreleaseVersion=${{ github.event.inputs.version }} -DdevelopmentVersion=${{ github.event.inputs.nextVersion }}
     
       - name: Create Github Release
         id: create_release
