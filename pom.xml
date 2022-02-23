@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.bonitasoft.example</groupId>
   <artifactId>getting-started-tutorial</artifactId>
-  <version>1.2.2-SNAPSHOT</version>
+  <version>2.1.0-SNAPSHOT</version>
   <name>getting-started-tutorial</name>
   <description>This project provides the solution for Bonita getting started.</description>
   <scm>
