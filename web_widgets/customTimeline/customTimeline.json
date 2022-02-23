@@ -110,11 +110,11 @@
       "bond" : "expression"
     }
   ],
-  "id" : "timelineWidget",
-  "name" : "TIMELINE",
-  "lastUpdate" : 1632128362687,
-  "template" : "@timelineWidget.tpl.html",
-  "controller" : "@timelineWidget.ctrl.js",
+  "id" : "customTimeline",
+  "name" : "Timeline",
+  "lastUpdate" : 1645633157089,
+  "template" : "@customTimeline.tpl.html",
+  "controller" : "@customTimeline.ctrl.js",
   "custom" : true,
   "assets" : [
     {

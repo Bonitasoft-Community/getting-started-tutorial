@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "1.10.18",
   "id" : "caseoverview",
   "name" : "caseoverview",
-  "lastUpdate" : 1632128362837,
+  "lastUpdate" : 1645633175086,
   "rows" : [
     [
       {
@@ -1034,9 +1034,9 @@
                   "value" : "event.icon"
                 }
               },
-              "reference" : "a51d8918-bd2b-41a9-9526-c2b8377ec655",
+              "reference" : "9ee98c99-9ec2-4395-b9c6-05129abb7511",
               "hasValidationError" : false,
-              "id" : "timelineWidget"
+              "id" : "customTimeline"
             }
           ]
         ]
