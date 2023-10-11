@@ -1,0 +1,94 @@
+{
+  "id" : "claimsList",
+  "name" : "claimsList",
+  "type" : "page",
+  "uuid" : "b082234a-afb7-430d-8ee6-8727596b456b",
+  "modelVersion" : "2.5",
+  "previousArtifactVersion" : "2.2",
+  "lastUpdate" : 1697035617502,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "headers" : {
+            "type" : "constant",
+            "value" : [
+              "Description",
+              "Answer",
+              "Satisfaction level"
+            ]
+          },
+          "content" : {
+            "type" : "expression",
+            "value" : "claims"
+          },
+          "columnsKey" : {
+            "type" : "constant",
+            "value" : [
+              "description",
+              "answer",
+              "satisfactionLevel"
+            ]
+          },
+          "selectedRow" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "striped" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "condensed" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "bordered" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "e78acf29-70b1-4ac7-b0c9-d588c9b5d1d7",
+        "hasValidationError" : false,
+        "id" : "pbTable"
+      }
+    ]
+  ],
+  "variables" : {
+    "claims" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [com.company.model.Claim]\",\"businessObjectName\":\"Claim\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.Claim\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    }
+  },
+  "assets" : [
+    {
+      "id" : "13f632ce-a7fd-4083-93b7-cb54d7e8b742",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}
