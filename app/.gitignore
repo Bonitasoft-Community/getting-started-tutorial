@@ -68,8 +68,5 @@
 # Macos
 .DS_Store
 
-
-/process_configurations
-/web_fragments/.metadata
 /web_fragments/*/*.js
 !/web_widgets/*/*.ctrl.js

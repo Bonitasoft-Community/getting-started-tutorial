@@ -118,4 +118,19 @@ input[type='password'].ng-invalid.ng-dirty {
 .margin-left-sm { margin-left: .5em; }
 .margin-left-md { margin-left: 1em; }
 .margin-left-lg { margin-left: 1.5em; }
-.margin-left-xl { margin-left: 3em; }
+.margin-left-xl { margin-left: 3em; }.ngdialog.ngdialog-theme-default .ngdialog-content {
+    width: 700px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    background: #fff;
+    padding: 0;
+}
+
+.ngdialog.ngdialog-theme-default {
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .ngdialog.ngdialog-theme-default .ngdialog-content {
+        width: 75%;
+    }
+}

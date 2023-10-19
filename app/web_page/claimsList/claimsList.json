@@ -3,9 +3,9 @@
   "name" : "claimsList",
   "type" : "page",
   "uuid" : "b082234a-afb7-430d-8ee6-8727596b456b",
-  "modelVersion" : "2.5",
-  "previousArtifactVersion" : "2.2",
-  "lastUpdate" : 1697035617502,
+  "modelVersion" : "2.6",
+  "previousArtifactVersion" : "2.5",
+  "lastUpdate" : 1697719128377,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [

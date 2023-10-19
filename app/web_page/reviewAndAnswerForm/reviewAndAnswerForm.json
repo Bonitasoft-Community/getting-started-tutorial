@@ -3,9 +3,9 @@
   "name" : "reviewAndAnswerForm",
   "type" : "form",
   "uuid" : "55a2de9a-8956-4cbd-b45a-b091cc6c38b5",
-  "modelVersion" : "2.5",
-  "previousArtifactVersion" : "2.2",
-  "lastUpdate" : 1697035617663,
+  "modelVersion" : "2.6",
+  "previousArtifactVersion" : "2.5",
+  "lastUpdate" : 1697719128459,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [

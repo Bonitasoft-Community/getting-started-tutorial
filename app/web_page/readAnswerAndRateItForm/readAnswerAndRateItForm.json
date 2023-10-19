@@ -3,9 +3,9 @@
   "name" : "readAnswerAndRateItForm",
   "type" : "form",
   "uuid" : "23b33906-4308-49af-a237-daf3790c2b7c",
-  "modelVersion" : "2.5",
-  "previousArtifactVersion" : "2.2",
-  "lastUpdate" : 1697035617597,
+  "modelVersion" : "2.6",
+  "previousArtifactVersion" : "2.5",
+  "lastUpdate" : 1697719128431,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [

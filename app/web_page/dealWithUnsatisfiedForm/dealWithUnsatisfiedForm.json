@@ -3,9 +3,9 @@
   "name" : "dealWithUnsatisfiedForm",
   "type" : "form",
   "uuid" : "706cd4cc-91a5-477c-b385-a51ea2823e35",
-  "modelVersion" : "2.5",
-  "previousArtifactVersion" : "2.2",
-  "lastUpdate" : 1697035617557,
+  "modelVersion" : "2.6",
+  "previousArtifactVersion" : "2.5",
+  "lastUpdate" : 1697719128403,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [

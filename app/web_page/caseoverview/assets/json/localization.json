@@ -3,13 +3,13 @@
     "No case found with id:": "Cas non trouvé:",
     "No documents available": "Aucun document n'a été attaché à ce cas.",
     "Timeline": "Chronologie",
-    "Documents" : "Documents",
+    "Documents": "Documents",
     "Business Data": "Données métier",
     "No business data available": "Aucune donnée disponible",
     "Case id": "Id du cas",
     "Archived case id": "Id de l'archive du cas",
     "Process": "Processus",
-    "No Events yet.":"Pas d'activité",
+    "No Events yet.": "Pas d'activité",
     "Nothing noticeable happened yet... But it surely will come!": "Aucune tâche réalisée ni disponible pour le moment.",
     "Case started": "Cas démarré",
     "Started by": "Démarré par",
@@ -92,17 +92,17 @@
         "FIRSTDAYOFWEEK": 1,
         "MONTH": [
           "janvier",
-          "f\u00e9vrier",
+          "février",
           "mars",
           "avril",
           "mai",
           "juin",
           "juillet",
-          "ao\u00fbt",
+          "août",
           "septembre",
           "octobre",
           "novembre",
-          "d\u00e9cembre"
+          "décembre"
         ],
         "SHORTDAY": [
           "dim.",
@@ -115,17 +115,17 @@
         ],
         "SHORTMONTH": [
           "janv.",
-          "f\u00e9vr.",
+          "févr.",
           "mars",
           "avr.",
           "mai",
           "juin",
           "juil.",
-          "ao\u00fbt",
+          "août",
           "sept.",
           "oct.",
           "nov.",
-          "d\u00e9c."
+          "déc."
         ],
         "fullDate": "EEEE d MMMM y",
         "longDate": "d MMMM y",
@@ -136,13 +136,22 @@
         "shortDate": "dd/MM/y",
         "shortTime": "HH:mm"
       }
-    }
+    },
+    "An error occurred with the requested operation": "Une erreur s'est produite lors de l'opération demandée",
+    "Your session is no longer active.": "Votre session n'est plus active.",
+    "Click on OK to be redirected and log back in.": "Cliquez sur OK pour être redirigé et vous reconnecter.",
+    "Click on Cancel to remain on this page and try to execute the operation again once you logged back in (e.g. in another tab).": "Cliquez sur Annuler pour rester sur cette page et essayer d'exécuter à nouveau l'opération après vous être reconnecté (e.g. dans un autre onglet).",
+    "Server is under maintenance.": "Une maintenance est en cours sur le serveur.",
+    "Click on OK to be redirected to the maintenance page.": "Cliquez sur OK pour être redirigé vers la page de maintenance.",
+    "Click on Cancel to remain on this page and wait for the maintenance to end.": "Cliquez sur Annuler pour rester sur cette page et attendre la fin des opérations de maintenance.",
+    "OK": "OK",
+    "Cancel": "Annuler"
   },
   "es-ES": {
     "No case found with id:": "No se ha encontrado el caso:",
     "No documents available": "Este caso no contiene ningún documento adjunto.",
     "Timeline": "Cronología",
-    "Documents" : "Documentos",
+    "Documents": "Documentos",
     "Business Data": "Datos de negocio",
     "No business data available": "No hay ningún dato de negocio disponible",
     "Case id": "Id del caso",
@@ -223,10 +232,10 @@
           "domingo",
           "lunes",
           "martes",
-          "mi\u00e9rcoles",
+          "miércoles",
           "jueves",
           "viernes",
-          "s\u00e1bado"
+          "sábado"
         ],
         "FIRSTDAYOFWEEK": 0,
         "MONTH": [
@@ -247,10 +256,10 @@
           "dom.",
           "lun.",
           "mar.",
-          "mi\u00e9.",
+          "mié.",
           "jue.",
           "vie.",
-          "s\u00e1b."
+          "sáb."
         ],
         "SHORTMONTH": [
           "ene.",
@@ -275,6 +284,15 @@
         "shortDate": "d/M/yy",
         "shortTime": "H:mm"
       }
-    }
+    },
+    "An error occurred with the requested operation": "Ha ocurrido un error con la operación solicitada",
+    "Your session is no longer active.": "Su sesión ya no es válida o ha expirado.",
+    "Click on OK to be redirected and log back in.": "Haz click en Aceptar para volver a iniciar sesión.",
+    "Click on Cancel to remain on this page and try to execute the operation again once you logged back in (e.g. in another tab).": "Haz click en Cancelar para permanecer en esta página e intentar de nuevo la operación cuando su sesión sera de nuevo iniciada (p.ej. en otra pestaña).",
+    "Server is under maintenance.": "El servidor está en mantenimiento.",
+    "Click on OK to be redirected to the maintenance page.": "Haz click en Aceptar para ser redirigido.",
+    "Click on Cancel to remain on this page and wait for the maintenance to end.": "Haz click en Cancelar para permanecer en esta página y esperar a que finalice el mantenimiento.",
+    "OK": "Aceptar",
+    "Cancel": "Cancelar"
   }
 }
