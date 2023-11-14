@@ -8,7 +8,7 @@
   </parent>
   <groupId>com.bonitasoft.example</groupId>
   <artifactId>getting-started-tutorial-parent</artifactId>
-  <version>3.0.0</version>
+  <version>3.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <licenses>
     <license />
