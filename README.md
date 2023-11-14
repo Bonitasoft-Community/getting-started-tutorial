@@ -4,7 +4,7 @@
 This repository provides the solution for [Bonita getting started](https://documentation.bonitasoft.com/bonita/latest/getting-started/getting-started-index).
 
 ## Compatibility
-This example has been built with Bonita 2021.2 Community Edition.
+This example has been built with Bonita 2023.2 Community Edition.
 
 It is compatible with all Bonita editions (Community and Enterprise).
 It should remain compatible with any future releases.
