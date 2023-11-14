@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.bonitasoft.example</groupId>
     <artifactId>getting-started-tutorial-bdm-parent</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>3.0.0</version>
   </parent>
   <artifactId>getting-started-tutorial-bdm-dao-client</artifactId>
   <dependencies>
